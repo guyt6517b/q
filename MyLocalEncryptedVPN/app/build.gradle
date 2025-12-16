@@ -1,0 +1,32 @@
+plugins {
+      id 'com.android.application'
+      id 'kotlin-android'
+  }
+
+  android {
+      compileSdk 34
+
+      defaultConfig {
+          applicationId "com.example.mylocalvpn"
+          minSdk 21
+          targetSdk 34
+          versionCode 1
+          versionName "1.0"
+      }
+
+      buildTypes {
+          release {
+              minifyEnabled false
+          }
+      }
+
+      kotlinOptions {
+          jvmTarget = '17'
+      }
+  }
+
+  dependencies {
+      implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.10"
+      implementation 'androidx.appcompat:appcompat:1.7.0'
+  }
+  
